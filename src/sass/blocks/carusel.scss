@@ -23,5 +23,35 @@
         right: -66px;
         left: auto;
     }
+    .title{
+        color: #000000;
+        margin-bottom: 40px;
+    }
+
 }
+
+@media (max-width: 767px) {
+    .carusel {
+        &__inner{
+            width: 500px;
+            img{
+                width: 500px;
+            }
+                
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .carusel {
+        &__inner{
+            width: 300px;
+            img{
+                width: 300px;
+            }
+                
+        }
+    }
+}
+
 
