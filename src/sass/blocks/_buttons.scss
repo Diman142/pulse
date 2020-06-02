@@ -23,11 +23,22 @@
         font-size: 16px;
     }
 }
+@media ( max-width: 991px ){
+    .button{
+        &_submit{
+            width: 350px;
+        }
+    }
+}
 
 @media (max-width: 575px) {
     .button{
         &_main {
             width: 200px;
+        }
+        &_submit {
+            width: 240px;
         } 
     }
 }
+

@@ -19,3 +19,25 @@
         }
     }
 }
+
+@media ( max-width: 991px ){
+    .feed-form {
+        min-width: 100%;
+        margin-top: 56px;
+        align-items: center;
+        input {
+          width: 350px;
+        } 
+    }
+
+}
+
+@media (max-width: 575px) {
+    .feed-form {
+        margin-top: 56px;
+        align-items: center;
+        input {
+          width: 240px;
+        } 
+    }
+}
