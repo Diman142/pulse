@@ -7,7 +7,7 @@ if(window.innerWidth<992){
     cons_title[0].classList.remove("title_left");
 }
 
-
+// Слик слайдер
 $('.carusel__inner').slick({
     speed: 1000,
     slidesToShow: 1,
@@ -25,7 +25,7 @@ $('.carusel__inner').slick({
         }
       ]
   });
-
+  // Переключение таббов
   $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
     $(this)
       .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
@@ -34,7 +34,7 @@ $('.carusel__inner').slick({
 
 
   
-
+  //Кнопка подробнее и назад в каталоге
   function toggleSlide(item){
     $(item).each(function(i){
         $(this).on('click', function(e){
@@ -47,6 +47,26 @@ $('.carusel__inner').slick({
 
   toggleSlide('.catalog-item__link');
   toggleSlide('.catalog-item__back');
+
+
+
+  // открытие модального окна при нажатии кнопок консультации
+  $('[data-modal=consultation]').on('click', function() {
+    $('.overlay, #consultation').fadeIn('slow');
+  });
+
+  //Закрытие модальных окон при нажатии крестика
+  $('.modal__close').on('click', function(){
+    $('.overlay, #consultation, #oreder, #thanks').fadeOut();
+  })
+
+  //Открытие моадльного окна при нажатии кнопки купить в каталоге 
+  $('.button_mini').each(function(i){
+    $(this).on('click', function(){
+        $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text()); //получаем нужный заголовк товара
+        $('.overlay, #order').fadeIn('slow');
+    });
+  });
 });
 
 
@@ -62,32 +82,3 @@ $('.carusel__inner').slick({
 
 
 
-// const slider = tns({
-//     container: '.carusel__inner',
-//     items: 1,
-//     slideBy: 'page',
-//     autoplay: false,
-//     controls: false,
-//     nav: false,
-//     // responsive: {
-//     //     575: {
-
-//     //     },
-//     //     767: {
-
-//     //     },
-//     //     991: {
-
-//     //     }
-//     //   }
-//   });
-
-
-
-// document.querySelector('.prev').addEventListener('click', function () {
-//     slider.goTo('prev');
-// }); 
-
-// document.querySelector('.next').addEventListener('click', function () {
-//     slider.goTo('next');
-// }); 

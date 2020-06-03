@@ -18,6 +18,9 @@
             
         }
     }
+    &_mt25{
+        margin-top: 25px;
+    }
 }
 
 @media ( max-width: 991px ){
@@ -36,6 +39,7 @@
     .feed-form {
         margin-top: 56px;
         align-items: center;
+        justify-content: center;
         input {
           width: 240px;
         } 
