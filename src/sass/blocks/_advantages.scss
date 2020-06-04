@@ -41,6 +41,14 @@
         }
 
     }
+    &__icon {
+        &_animation{
+            animation-name:heartbeat;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+    }
 }
 @media ( max-width: 1200px ) {
     .advantages {

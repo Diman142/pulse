@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/slick.css"> 
+    <link rel="stylesheet" href="css/animate.min.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css"> -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/style.min.css">
@@ -15,7 +16,7 @@
 </head>
 <body>
     <!-- Главная страница начало -->
-   <section class="promo">
+   <section class="promo" id="up">
         <div class="container">
             <header class="header">
                 <a href="" class="header__logo">
@@ -68,7 +69,7 @@
                     <div class="advantages__text">Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
                 </div>
                 <div class="advantages__block">
-                    <img src="./icons/heart.png" alt="heart">
+                    <img src="./icons/heart.png" alt="heart" class="advantages__icon_animation">
                     <h2 class="advantages__subheader">Заботимся о здоровье</h2>
                     <div class="advantages__text">Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
                 </div>
@@ -90,10 +91,10 @@
                 Просто заполните форму заявки<br>
                 и мы перезвоним вам в течении 10 минут
            </div>
-           <form class="feed-form" action="#">
-               <input name="name" required placeholder="Ваше имя" type="text">
-               <input name="phone" required placeholder="Ваш телефон" type="number">
-               <input name="email" required placeholder="Ваш E-mail" type="email">
+            <form id="consultation-form" class="feed-form" action="#">
+               <input name="name" placeholder="Ваше имя" type="text">
+               <input name="phone" placeholder="Ваш телефон">
+               <input name="email" placeholder="Ваш E-mail" type="email">
                <button class="button button_submit">Заказать консультацию</button>
             </form>
        </div>
@@ -360,7 +361,7 @@
    <section class="comments">
        <div class="container">
             <h2 class="title">отзывы клиентов</h2>
-            <div class="comments-wrapper">
+            <div class="comments-wrapper animate__animated animate__fadeInUp wow" data-wow-duration="1s" data-wow-delay="0.5s">
                 <img src="./img/Irina.png" alt="Irina" class="comments-wrapper__img">
                 <div class="comments-wrapper__descr">
                     <div class="comments-wrapper__name">Ирина Иванченко </div>
@@ -370,7 +371,7 @@
                     </div>
                 </div>
             </div>
-            <div class="comments-wrapper">
+            <div class="comments-wrapper animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="0.5s">
                 <img src="./img/Ivan.png" alt="Ivan" class="comments-wrapper__img">
                 <div class="comments-wrapper__descr">
                     <div class="comments-wrapper__name">Иван Сёмочкин</div>
@@ -381,7 +382,7 @@
                 </div>
                 </div>
             </div>
-            <div class="comments-wrapper">
+            <div class="comments-wrapper animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="0.5s">
                 <img src="./img/Julia.png" alt="Julia" class="comments-wrapper__img">
                 <div class="comments-wrapper__descr">
                     <div class="comments-wrapper__name">Юлия Дашкина</div>
@@ -418,7 +419,7 @@
            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
             <form class="feed-form feed-form_mt25" action="#">
                 <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="phone" required placeholder="Ваш телефон">
                 <input name="email" required placeholder="Ваш E-mail" type="email">
                 <button class="button button_submit">Заказать консультацию</button>
             </form>
@@ -430,7 +431,7 @@
             <div class="modal__descr">Пульсометр Polar FT1</div>
             <form class="feed-form feed-form_mt25" action="#">
                 <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="phone" required placeholder="Ваш телефон">
                 <input name="email" required placeholder="Ваш E-mail" type="email">
                 <button class="button button_submit">Купить</button>
              </form>
@@ -441,10 +442,14 @@
             <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
         </div>
    </div>
+   <a href="#up" class="pageup"><img src="icons/arrow.svg" alt="up"></a>
+   
    <!-- Модальные окна конец-->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
    <script src="js/slick.min.js"></script> 
-   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> -->
+   <script src="js/jquery.validate.min.js"></script>
+   <script src="js/jquery.maskedinput.min.js"></script>
+   <script src="js/wow.min.js"></script>
    <script src="js/script.js"></script>
 </body>
 </html>
