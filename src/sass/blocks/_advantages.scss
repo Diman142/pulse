@@ -2,23 +2,27 @@
     min-height: 470px;
     padding-top: 70px;
     padding-bottom: 78px;
+
     &__title {
         color: #0d0d0d;
         font-size: 30px;
         font-weight: 500;
         text-align: center;
     }
+
     &__wrapper {
         margin-top: 65px;
         display: flex;
         justify-content: space-between;
-    }   
+    }
+
     &__block {
-        
+
         display: flex;
         align-items: center;
         flex-direction: column;
     }
+
     &__subheader {
         margin-top: 38px;
         color: #0d0d0d;
@@ -26,13 +30,15 @@
         font-weight: 700;
         margin-bottom: 0px;
     }
-    &__text{
+
+    &__text {
         margin-top: 26px;
         width: 249px;
         color: #0d0d0d;
         font-size: 14px;
         font-weight: 300;
         text-align: center;
+
         a {
             font-size: 14px;
             font-weight: 400;
@@ -41,16 +47,25 @@
         }
 
     }
+
+
+
     &__icon {
-        &_animation{
-            animation-name:heartbeat;
+        &_animation {
+            animation-name: heartbeat;
             animation-duration: 2s;
             animation-timing-function: ease;
             animation-iteration-count: infinite;
         }
+
+        &_size {
+            width: 70px;
+            height: 70px;
+        }
     }
 }
-@media ( max-width: 1200px ) {
+
+@media (max-width: 1200px) {
     .advantages {
         &__wrapper {
             justify-content: space-around;
@@ -59,7 +74,7 @@
 
 }
 
-@media ( max-width: 991px ) {
+@media (max-width: 991px) {
     .advantages {
         &__text {
             width: 212px;
@@ -74,6 +89,7 @@
             width: 160px;
             font-size: 11px;
         }
+
         &__title {
             color: #0d0d0d;
             font-size: 20px;
@@ -87,22 +103,26 @@
 @media (max-width: 575px) {
     .advantages {
         &__title {
-            font-size: 24px; 
+            font-size: 24px;
         }
+
         &__wrapper {
-           flex-direction: column;
-           margin-top: 15px;
+            flex-direction: column;
+            margin-top: 15px;
         }
+
         &__subheader {
             font-size: 20px;
         }
+
         &__text {
             width: 240px;
             font-size: 16px;
         }
+
         &__block {
             margin-top: 25px;
         }
-        
+
     }
 }
