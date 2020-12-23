@@ -8,3 +8,5 @@ If you want to start project from IDE you can use npm install and gulp default t
 For creating this site I used next stack:
 
 HTML 5 , SCSS, JS, JQ, Gulp, Firebase (hosting)
+
+There is a PHP script inside the project for SMTP sending this script is not configured now
