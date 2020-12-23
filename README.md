@@ -1,7 +1,5 @@
 # Pulse
-Landing page.
-
-The site is an educational project. 
+Landing page of sport shop.
 
 # I Used next stack: 
 HTML 
